@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: rgb(245, 245, 245);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 60px auto;
+        max-width: 1100px;
+    }
+
+    .card {
+        background: #d4dbe1;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        width: 300px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(216, 179, 94);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="circle">
+                <b>SY</b>
+            </div>
+            <center>
+                <big><b>Samrat Yadav</b></big><br>
+                B-Tech:Computer Science Engineering <br>
+                Roll Number:2025CSE10001 <br>
+                1st Year <br>
+            </center>
+        </div>
+        <div class="card">
+            <div class="circle">
+                <b>RS</b>
+            </div>
+            <center>
+                <big><b>Ranvijay Singh</b></big><br>
+                B-Tech:Aerospace Engineering <br>
+                Roll Number:2025AE10001 <br>
+                1st Year <br>
+            </center>
+        </div>
+        <div class="card">
+            <div class="circle">
+                <b>AB</b>
+            </div>
+            <center>
+                <big><b>Abhimanyu Bhatia</b></big><br>
+                B-Tech:Electrical Engineering <br>
+                Roll Number:2025EE10001 <br>
+                1st Year <br>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce Style Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000000;
+            padding: 15px 20px;
+            color: #fff;
+            position: relative;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #e9c46a;
+        }
+
+        .icons a {
+            margin-left: 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: absolute;
+                top: 65px;
+                left: -100%;
+                width: 100%;
+                background: #264653;
+                flex-direction: column;
+                text-align: center;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            #menu-toggle:checked~.nav-links {
+                left: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://example.com" target="_blank">ShopEase</a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <ul class="nav-links">
+            <li><a href="https://example.com/home" target="_blank">Home</a></li>
+            <li><a href="https://example.com/shop" target="_blank">Shop</a></li>
+            <li><a href="https://example.com/deals" target="_blank">Deals</a></li>
+            <li><a href="https://example.com/contact" target="_blank">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="https://example.com/cart" target="_blank">🛒</a>
+            <a href="https://example.com/login" target="_blank">👤</a>
+        </div>
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </nav>
+    </div>
+    <h1>Welcome to ShopEase!</h1>
+    <p>Your one-stop destination for all shopping needs.</p>
+    </div>
+</body>
+
+</html>
